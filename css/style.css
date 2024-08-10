@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: #6f777a;
+}
+
+.wrapper{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.wrapper .form_container{
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 4) ;
+}
+
+.form_container form input{
+    padding: 10px;
+    outline: none;
+    font-size: 18px;
+    width: 250px;
+    border: 3px solid #6f777a;
+    background: #fff;
+
+}
+.form_container .submitBtn{
+    padding: 10px 15px;
+    font-size: 18px;
+    background: dodgerblue;
+    color: #fff;
+    border: 3px solid dodgerblue;
+    outline: none;
+    cursor: pointer;
+    letter-spacing: 1px;
+    
+
+}
+.form_container .submitBtn.active{
+    opacity: 0.7;
+    pointer-events: none;
+
+}
+.countryInfoContainer{
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 100%;
+    background: #f7f7f7;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0,4);
+    z-index: -111;
+}
+.countryInfoContainer h4{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px
+}
+.countryInfoContainer h3{
+    text-align: center;
+    color: red;
+    font-weight: 400;
+}
+.countryInfoContainer img{
+    width: 200px;
+    display: block;
+    margin: auto;
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.3));
+}
+.countryInfoContainer  h2{
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
+
+table{
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+table tr td, table tr th{
+    padding: 10px;
+    text-align: left;
+}
+
+
+ul{
+    width: 250px;
+    max-height: 350px;
+    overflow: auto;
+}
+
+ul li{
+  list-style: none;
+  border: 1px solid;
+  border-top: unset;
+}
+
+ul li button{
+    border: none;
+    outline: auto;
+    background: transparent;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: 0.2s;
+}
+
+ul li button:hover{
+    background: #ebe0e0;
+}
